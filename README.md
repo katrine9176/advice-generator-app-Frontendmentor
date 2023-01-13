@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://github.com/katrine9176/advice-generator-app-Frontendmentor)
 - Live Site URL: [Live site URL](https://your-live-site-url.com)
 
 ## My process
@@ -39,7 +39,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- [Advice Slip JSON API](https://api.adviceslip.com))
+- [Advice Slip JSON API](https://api.adviceslip.com)
 
 ## Author
 

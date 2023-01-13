@@ -71,6 +71,10 @@ body {
   line-height: 100px;
   width: 24px;
   height: 24px;
+  transition: all 0.3s;
+}
+.main .advice__dice:hover {
+  box-shadow: 0 0 25px hsl(150deg, 100%, 66%);
 }
 .main .attribution {
   margin-top: 5em;
