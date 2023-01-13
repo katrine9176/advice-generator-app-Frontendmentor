@@ -1,0 +1,111 @@
+@use 'colors' as *;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Manrope', sans-serif;
+	font-size: 2.8rem;
+	background-color: $bg;
+}
+
+.main {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	.advice {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		padding: 1.5em 0.5em;
+		padding-bottom: 0;
+		width: 300px;
+		background-color: $bg-card;
+		border-radius: 15px;
+
+		&__number {
+			margin-bottom: 0.5em;
+			text-align: center;
+			font-size: 1.3rem;
+			letter-spacing: 4px;
+			text-transform: uppercase;
+			color: $green;
+		}
+
+		&__text {
+			margin-top: 0.5em;
+			text-align: center;
+			color: $white;
+		}
+
+		&__line, &__bigger-line {
+			margin: 1em 0;
+			margin-bottom: 0;
+		}
+
+        &__bigger-line {
+            display: none;
+        }
+
+		&__dice {
+			align-self: center;
+			position: relative;
+			bottom: -35px;
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+			background-color: $green;
+			text-align: center;
+			border: none;
+			cursor: pointer;
+
+			&-icon {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				line-height: 100px;
+				width: 24px;
+				height: 24px;
+			}
+		}
+	}
+
+	.attribution {
+		margin-top: 5em;
+		font-size: 1.1rem;
+		text-align: center;
+		color: $grey;
+
+		a {
+			color: hsl(228, 45%, 44%);
+			text-decoration: none;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.main {
+		.advice {
+			width: 500px;
+
+            &__line {
+                display: none;
+            }
+    
+            &__bigger-line {
+                display: block;
+            }
+		}
+	}
+}
